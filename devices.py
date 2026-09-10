@@ -22,3 +22,11 @@ def hottest(devices):
     return max(devices, key=lambda device: device["temp"])
 
 print(hottest(readings))
+
+def to_status(device):
+    return {
+        "name": device["name"],
+        "room": device["room"],
+        "temp": device["temp"],
+        "online": device["online"]
+    }
