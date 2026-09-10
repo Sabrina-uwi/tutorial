@@ -18,3 +18,7 @@ def average_temp(devices):
 
 print(average_temp(readings))
 
+def hottest(devices):
+    return max(devices, key=lambda device: device["temp"])
+
+print(hottest(readings))
