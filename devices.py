@@ -6,13 +6,3 @@ readings = [
     {"name": "patio",      "room": "outside", "temp": 29.8, "online": True},
 ]
 
-def list_devices(devices):
-    for device in devices:
-        print(f"{device['name']}: {device['temp']}")
-
-list_devices(readings)
-
-def average_temp(devices):
-    return sum(device["temp"] for device in devices) / len(devices)
-
-print(average_temp(readings))
