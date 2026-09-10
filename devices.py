@@ -6,3 +6,8 @@ readings = [
     {"name": "patio",      "room": "outside", "temp": 29.8, "online": True},
 ]
 
+def list_devices(devices):
+    for device in devices:
+        print(f"{device['name']}: {device['temp']}")
+
+list_devices(readings)
